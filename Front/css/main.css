@@ -1,0 +1,365 @@
+*,*:before,*:after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+    font-size: 18px;
+    background-color: #05030C;
+    background-image: url("../img/back_home.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #ffffff;
+}
+
+.flex-r-c-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-c-c-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #ffffff;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 126px;
+}
+
+header .title {
+    margin: 48px 0 21px;
+}
+
+header .title h1 {
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+/* HOME */
+
+#Start .start-button {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-bottom: 140px;
+}
+
+#Start .start-button img {
+    width: 50px;
+    width: 57px;
+    transition: 1s;
+}
+
+#Start .start-button a {
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#About .about {
+    padding: 15px;
+    margin-bottom: 75px;
+}
+
+#About .about h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#About .about p {
+    text-align: justify;
+    line-height: 2;
+}
+
+#Slider {
+    margin-top: 50px;
+}
+
+#Slider .go-button, .down-button {
+    margin: 25px 0 35px;
+    text-align: center;
+}
+
+#Slider .go-button a, .down-button a {
+    padding: 25px 50px;
+    background: linear-gradient(288.47deg, #997A41 -12.07%, rgba(153, 122, 65, 0) 41.63%);
+    border-radius: 43px;
+    border: solid 2px #997A41;
+}
+
+/* DOWNLOAD */
+
+#download {
+    margin-top: 75px;
+    align-items: flex-start;
+}
+
+#download .down-block {
+    text-align: center;
+    margin: 25px 35px 0 0;
+}
+
+#download ul li {
+    list-style: disc inside;
+}
+
+#download .about ul {
+    margin-bottom: 15px;
+}
+
+#download .about ul li {
+    line-height: 2;
+}
+
+/* FORUM */
+
+#Hello .start-block {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 200px;
+    justify-content: flex-start;
+}
+
+#posts {
+    margin-bottom: 100px;
+}
+
+#posts .posts-block {
+    align-items: flex-end;
+}
+
+#posts .create-post a {
+    padding: 10px 35px;
+    background: linear-gradient(288.47deg, #997A41 -12.07%, rgba(153, 122, 65, 0) 41.63%);
+    border-radius: 43px;
+    border: solid 2px #997A41;
+}
+
+#posts .create-post {
+    margin: 35px 0 25px;
+    text-align: center;
+}
+
+#posts .posts-items {
+    width: 100%;
+}
+
+#posts .posts__item, .post .from-posts, .post .text, .post .file {
+    width: 100%;
+    justify-content: space-between;
+    text-justify: distribute;
+    margin: 5px 0;
+    color: #05030C;
+    vertical-align:baseline;
+    font-weight: 800;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#posts .posts__item .topic, .post .from-posts .topic {
+    width: 24%;
+    height: 40px;
+    background-color: #997A41;
+}
+
+#posts .posts__item .about, .post .from-posts .about {
+    width: 75%;
+    height: 40px;
+    background-color: #997A41;
+}
+
+#posts .posts__item p, .post p {
+    padding: 10px 15px;
+}
+
+/* POST */
+
+#post {
+    margin-bottom: 170px;
+}
+
+.post .from-posts, .post .text {
+    width: 70%;
+}
+
+.post .text {
+    height: 250px;
+    background-color: #997A41;
+}
+
+.post .text p {
+    line-height: 1.5;
+}
+
+.post img {
+    margin: 15px 0;
+    width: 45%;
+}
+
+/* POST-CREATE */
+
+#create-post {
+    margin-bottom: 150px;
+}
+
+#create-post form .topic, #create-post form .about {
+    padding-left: 10px;
+}
+
+#create-post form .text {
+    padding: 15px;
+    resize: none;
+}
+
+#create-post form .file {
+    width: 70%;
+    background: linear-gradient(288.47deg, #997A41 -12.07%, rgba(153, 122, 65, 0) 41.63%);
+    border: solid 2px #997A41;
+    color: #ffffff;
+}
+
+#create-post form button {
+    padding: 10px 35px;
+    background: linear-gradient(288.47deg, #997A41 -12.07%, rgba(153, 122, 65, 0) 41.63%);
+    border-radius: 43px;
+    border: solid 2px #997A41;
+    align-self: flex-end;
+    margin-right: 15%;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+/* REPORT-CREATE */
+
+#create-report {
+    margin-bottom: 150px;
+}
+
+#create-report form .topic, #create-report form .about {
+    padding-left: 10px;
+}
+
+#create-report form .text {
+    padding: 15px;
+    resize: none;
+}
+
+#create-report form .file {
+    width: 70%;
+    background: linear-gradient(288.47deg, #997A41 -12.07%, rgba(153, 122, 65, 0) 41.63%);
+    border: solid 2px #997A41;
+    color: #ffffff;
+}
+
+#create-report form .name, #create-report form .topic, #create-report form .about {
+    width: 70%;
+    height: 40px;
+    margin-bottom: 10px;
+    background-color: #997A41;
+}
+
+#create-report form .text {
+    width: 70%;
+    justify-content: space-between;
+    text-justify: distribute;
+    margin: 5px 0;
+    color: #05030C;
+    vertical-align:baseline;
+    font-weight: 800;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #997A41;
+}
+
+#create-report form button {
+    padding: 10px 35px;
+    background: linear-gradient(288.47deg, #997A41 -12.07%, rgba(153, 122, 65, 0) 41.63%);
+    border-radius: 43px;
+    border: solid 2px #997A41;
+    align-self: flex-end;
+    margin-right: 15%;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+/* LOGIN */
+
+#login {
+    margin-bottom: 75px;
+}
+
+#login form legend {
+    margin-bottom: 10px;
+}
+
+#login form input {
+    width: 40%;
+    height: 40px;
+    margin: 5px 0;
+    padding-left: 10px;
+    background-color: #997A41;
+}
+
+#login form button {
+    width: 50%;
+    background: linear-gradient(288.47deg, #997A41 -12.07%, rgba(153, 122, 65, 0) 41.63%);
+    border-radius: 43px;
+    border: solid 2px #997A41;
+    margin-top: 20px;
+    color: #ffffff;
+    height: 55px;
+}
+
+/* REG */
+
+#new-acc {
+    margin-bottom: 75px;
+}
+
+#new-acc form legend {
+    margin-bottom: 10px;
+}
+
+#new-acc form input {
+    width: 40%;
+    height: 40px;
+    margin: 5px 0;
+    padding-left: 10px;
+    background-color: #997A41;
+}
+
+#new-acc form button {
+    width: 50%;
+    background: linear-gradient(288.47deg, #997A41 -12.07%, rgba(153, 122, 65, 0) 41.63%);
+    border-radius: 43px;
+    border: solid 2px #997A41;
+    margin-top: 20px;
+    color: #ffffff;
+    height: 55px;
+}
+
+
+.wrapper {
+    width: 75%;
+    margin: auto;
+}

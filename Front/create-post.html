@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Blessed Gods</title>
+    <link href="img/help.png" rel="icon">
+</head>
+<body>
+    <header id="head">
+        <div class="wrapper">
+            <div class="title flex-r-c-c">
+                <img src="img/help.png">
+                <h1>Blessed Gods</h1>
+            </div>
+            <nav>
+                <ul class="flex-r-c-c">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="forum.html">Форум</a></li>
+                    <li><a href="">Аккаунт</a></li>
+                    <li><a href="">Жалоба</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="create-post">
+            <div class="wrapper">
+                <form class="post flex-c-c-c" method="post" action="create-post.php">
+                    <div class="from-posts flex-r-c-c">
+                        <input type="text" name="name" class="topic" placeholder="Имя">
+                        <input type="text" name="topic" class="about" placeholder="Тема">
+                    </div>
+                    <textarea type="text" name="post-text" class="text" placeholder="Рассказывайте"></textarea>
+                    <input type="file" name="file" class="file">
+                    <button type="submit">Создать пост</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
