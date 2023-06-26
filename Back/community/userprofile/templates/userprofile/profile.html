@@ -1,0 +1,12 @@
+{% extends 'userprofile/base.html' %}
+
+{% block content %}
+
+{% for User in Users %}
+    <tr class='success'>
+        <td>{{User.email}}</td>
+    </tr>
+{% endfor %}
+
+
+{% endblock %}

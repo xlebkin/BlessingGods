@@ -1,0 +1,19 @@
+{% extends 'userprofile/base.html' %}
+
+{% block content %}
+
+<section id="new-acc">
+    <div class="wrapper">
+        <form class="reg flex-c-c-c" method="post">
+            {% csrf_token %}
+            <legend>Нет аккаунта?</legend>
+            <input type="text" name="username" class="topic" placeholder="Имя">
+            <input type="text" name="email" class="topic" placeholder="email">
+            <input type="password" name="password1" class="pass" placeholder="Пароль">
+            <input type="password" name="password2" class="pass" placeholder="Пароль еще раз">
+            <button type="submit">Создать новый аккаунт</button>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

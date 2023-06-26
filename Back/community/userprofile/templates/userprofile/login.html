@@ -1,0 +1,16 @@
+{% extends 'userprofile/base.html' %}
+
+{% block content %}
+
+<section id="login">
+    <div class="wrapper">
+        <form class="login flex-c-c-c" method="post">
+            {% csrf_token %}
+            <legend>Войти в аккаунт</legend>
+            <input type="text" name="username" class="topic" placeholder="Имя">
+            <input type="password" name="password" class="pass" placeholder="Пароль">
+            <button type="submit" value="Login">Войти в существующий аккаунт</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

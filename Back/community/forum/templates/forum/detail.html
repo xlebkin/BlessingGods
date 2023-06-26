@@ -1,0 +1,9 @@
+{% extends 'userprofile/base.html' %}
+{% block title %}{{article.title}}{% endblock %}
+{% block content %}
+    <div class="features">
+        <h1>{{article.title}}</h1>
+        <p>{{article.full_text}}</p>
+        <p>{{article.anons}}</p>
+    </div>
+{% endblock %}

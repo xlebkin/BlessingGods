@@ -1,0 +1,33 @@
+{% extends 'userprofile/base.html' %}
+
+{% block content %}
+
+<main>
+    <section id="Hello">
+        <div class="start-block wrapper flex-c-c-c">
+            <h1>Начни общение с товарищами по интересам у нашего костра</h1>
+        </div>
+    </section>
+    <section id="posts">
+        <div class="posts-block wrapper flex-c-c-c">
+            <div class="create-post">
+                <a href="{% url 'forum:create' %}">Создать пост</a>
+            </div>
+            <div class="posts-items flex-c-c-c">
+                {% if news  %}
+                    {% for el in news %}
+                <div class="posts__item flex-r-c-c">
+                    <div class="topic">
+                        <p>{{el.title}}</p>
+                    </div>
+                    <div class="about">
+                        <p>{{el.anons}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
